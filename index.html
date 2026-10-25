@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
 
     <!-- Header & Navigation -->
     <header>
@@ -15,100 +16,97 @@
                 <h1>Meine Pflege</h1>
                 <span class="subtitle">Ambulanter Pflegedienst in [Platzhalter]</span>
             </div>
-            <nav class="nav-links">
+            <nav class="nav-links" aria-label="Hauptnavigation">
                 <a href="#about">Über uns</a>
                 <a href="#services">Leistungen</a>
             </nav>
         </div>
-    </header>
 
-    <main>
-        <div class="pre-contact">
-            <div class="top-bar">
-                <div class="container">
-                    <span class="top-bar-message">Wir sind gerne für Sie da.</span>
-                    <div class="top-bar-contact">
-                        <span>📞 [Telefonnummer]</span>
-                        <span>✉️ [E-Mail-Adresse]</span>
-                    </div>
+        <div class="top-bar">
+            <div class="container">
+                <span class="top-bar-message">Wir sind gerne für Sie da.</span>
+                <div class="top-bar-contact">
+                    <span><span aria-hidden="true">📞</span> [Telefonnummer]</span>
+                    <span><span aria-hidden="true">✉️</span> [E-Mail-Adresse]</span>
                 </div>
             </div>
-
-            <!-- Hero Section -->
-            <section class="hero container">
-                <div class="hero-content">
-                    <h2>Gut umsorgt.<br>Bei Ihnen<br>zu Hause.</h2>
-                    <p>Wir unterstützen dort, wo Sie sich am wohlsten fühlen: in Ihrem eigenen Zuhause.</p>
-                    <a href="#contact" class="btn">Kontakt aufnehmen &rarr;</a>
-                </div>
-                <div class="hero-image"></div>
-            </section>
-
-
-            <!-- Über uns -->
-            <section class="about container" id="about">
-                <div class="about-title">
-                    <span class="label">Über uns</span>
-                    <h2>Pflege beginnt mit Vertrauen.</h2>
-                </div>
-                <div class="about-text">
-                    <p>Wir sind ein ambulanter Pflegedienst in [Platzhalter]. Gute Pflege heißt für uns: zuhören, verständlich erklären und gemeinsam entscheiden. Angehörige beziehen wir auf Wunsch mit ein. So finden wir heraus, welche Unterstützung wirklich zu Ihnen passt.</p>
-                    <p>Wir möchten Menschen dabei unterstützen, selbstbestimmt im vertrauten Zuhause zu leben – mit Respekt vor ihrer Geschichte, ihren Gewohnheiten und ihren Wünschen.</p>
-                </div>
-            </section>
-
-            <!-- Leistungen -->
-            <section class="services container" id="services">
-                <div class="services-header">
-                    <span class="label">Leistungen</span>
-                    <h2>So viel Hilfe, wie Sie brauchen.</h2>
-                </div>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <h3>Körperbezogene Pflege</h3>
-                        <p>Unterstützung beim Waschen, Ankleiden, Essen und bei der Bewegung – achtsam und in Ihrem Tempo.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Behandlungspflege</h3>
-                        <p>Hilfe bei Medikamenten, Verbänden und weiteren ärztlich verordneten Maßnahmen.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Leistung 3</h3>
-                        <p>Beschreibung</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Leistung 4</h3>
-                        <p>Beschreibung</p>
-                    </div>
-                </div>
-            </section>
         </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero container" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h2 id="hero-title">Gut umsorgt.<br>Bei Ihnen<br>zu Hause.</h2>
+                <p>Wir unterstützen dort, wo Sie sich am wohlsten fühlen: in Ihrem eigenen Zuhause.</p>
+                <a href="#contact" class="btn">Kontakt aufnehmen &rarr;</a>
+            </div>
+            <div class="hero-image" aria-hidden="true"></div>
+        </section>
+
+        <!-- Über uns -->
+        <section class="about container" id="about" aria-labelledby="about-title">
+            <div class="about-title">
+                <span class="label">Über uns</span>
+                <h2 id="about-title">Pflege beginnt mit Vertrauen.</h2>
+            </div>
+            <div class="about-text">
+                <p>Wir sind ein ambulanter Pflegedienst in [Platzhalter]. Gute Pflege heißt für uns: zuhören, verständlich erklären und gemeinsam entscheiden. Angehörige beziehen wir auf Wunsch mit ein. So finden wir heraus, welche Unterstützung wirklich zu Ihnen passt.</p>
+                <p>Wir möchten Menschen dabei unterstützen, selbstbestimmt im vertrauten Zuhause zu leben – mit Respekt vor ihrer Geschichte, ihren Gewohnheiten und ihren Wünschen.</p>
+            </div>
+        </section>
+
+        <!-- Leistungen -->
+        <section class="services container" id="services" aria-labelledby="services-title">
+            <div class="services-header">
+                <span class="label">Leistungen</span>
+                <h2 id="services-title">So viel Hilfe, wie Sie brauchen.</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Körperbezogene Pflege</h3>
+                    <p>Unterstützung beim Waschen, Ankleiden, Essen und bei der Bewegung – achtsam und in Ihrem Tempo.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Behandlungspflege</h3>
+                    <p>Hilfe bei Medikamenten, Verbänden und weiteren ärztlich verordneten Maßnahmen.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Leistung 3</h3>
+                    <p>Beschreibung</p>
+                </div>
+                <div class="service-item">
+                    <h3>Leistung 4</h3>
+                    <p>Beschreibung</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Kontakt -->
-        <section class="contact-section" id="contact">
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
             <div class="container contact-container">
                 <div class="contact-text">
                     <span class="label">Kontakt</span>
-                    <h2>Der erste Schritt?<br>Ein Gespräch.</h2>
+                    <h2 id="contact-title">Der erste Schritt?<br>Ein Gespräch.</h2>
                     <p>Sie suchen Unterstützung für sich oder einen Angehörigen? Wir besprechen Ihren Bedarf und klären gemeinsam die nächsten Schritte.</p>
                 </div>
                 <div class="contact-card">
                     <div class="contact-item">
-                        <span class="contact-icon">📞</span>
+                        <span class="contact-icon" aria-hidden="true">📞</span>
                         <div class="contact-info">
                             <span class="small">Telefon</span>
                             <span class="value">[Telefonnummer]</span>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">✉️</span>
+                        <span class="contact-icon" aria-hidden="true">✉️</span>
                         <div class="contact-info">
                             <span class="small">E-Mail</span>
                             <span class="value">[E-Mail-Adresse]</span>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📍</span>
+                        <span class="contact-icon" aria-hidden="true">📍</span>
                         <div class="contact-info">
                             <span class="small">Anschrift</span>
                             <span class="value">[Straße und Hausnummer]<br>[PLZ und Ort]</span>
@@ -122,7 +120,7 @@
     <!-- Footer -->
     <footer class="header-main container">
         <div class="footer-logo">
-            <h1>Meine Pflege</h1>
+            <p class="footer-brand">Meine Pflege</p>
             <span class="subtitle">Ambulanter Pflegedienst in [Platzhalter]</span>
             <div class="website-hint">Website-Entwurf</div>
         </div>
