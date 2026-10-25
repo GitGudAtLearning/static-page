@@ -416,8 +416,12 @@
                 display: none;
             }
             .nav-links {
-                flex-direction: column;
-                align-items: flex-end;
-                gap: 4px;
+                display: none;
+            }
+            header .header-main::after {
+                content: "\2193 Scrollen";
+                margin-left: auto;
+                color: var(--secondary-text);
+                font-size: 0.8rem;
             }
         }
