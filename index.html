@@ -1,169 +1,135 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Pflegedienst — moderne, persönliche Pflege und Unterstützung im Alltag."
-    />
-    <title>Pflegedienst | Betreuung zu Hause</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container nav">
-        <a href="#top" class="brand" aria-label="Startseite">Pflegedienst</a>
-        <nav class="main-nav" aria-label="Hauptnavigation">
-          <a href="#ueber-uns">Über uns</a>
-          <a href="#leistungen">Leistungen</a>
-          <a href="#kontakt">Kontakt</a>
-        </nav>
-        <a href="#kontakt" class="button button-primary">Kontakt aufnehmen</a>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Pflege - Ambulanter Pflegedienst</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-main container">
+            <div class="logo">
+                <h1>Meine Pflege</h1>
+                <span class="subtitle">Ambulanter Pflegedienst in [Platzhalter]</span>
+            </div>
+            <nav class="nav-links">
+                <a href="#about">Über uns</a>
+                <a href="#services">Leistungen</a>
+            </nav>
+        </div>
+
+        <div class="top-bar">
+            <div class="container">
+                <span style="color: var(--secondary-text);">Wir sind gerne für Sie da.</span>
+                <div class="top-bar-contact">
+                    <span>📞 [Telefonnummer]</span>
+                    <span>✉️ [E-Mail-Adresse]</span>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow">Persönliche Begleitung zu Hause</p>
-            <h1>Verlässliche Pflege für ein selbstständiges Leben.</h1>
-            <p class="lead">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua.
-            </p>
-            <div class="hero-actions">
-              <a href="#kontakt" class="button button-primary">Angebot anfragen</a>
-              <a href="#leistungen" class="button button-secondary">Mehr erfahren</a>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container">
+            <div class="hero-content">
+                <h2>Gut umsorgt.<br>Bei Ihnen<br>zu Hause.</h2>
+                <p>Wir unterstützen dort, wo Sie sich am wohlsten fühlen: in Ihrem eigenen Zuhause.</p>
+                <a href="#contact" class="btn">Kontakt aufnehmen &rarr;</a>
             </div>
-          </div>
+            <div class="hero-image"></div>
+        </section>
 
-          <div class="hero-panel" aria-label="Qualitätsmerkmale im Pflegedienst">
-            <div class="panel-box">
-              <span class="stat">24/7</span>
-              <p>Betreuung und Rücksprache</p>
+        <!-- Divider -->
+        <hr class="divider">
+
+        <!-- Über uns -->
+        <section class="about container" id="about">
+            <div class="about-title">
+                <span class="label">Über uns</span>
+                <h2>Pflege beginnt mit Vertrauen.</h2>
             </div>
-            <div class="panel-box">
-              <span class="stat">95%</span>
-              <p>zufriedene Angehörige</p>
+            <div class="about-text">
+                <p>Wir sind ein ambulanter Pflegedienst in [Platzhalter]. Gute Pflege heißt für uns: zuhören, verständlich erklären und gemeinsam entscheiden. Angehörige beziehen wir auf Wunsch mit ein. So finden wir heraus, welche Unterstützung wirklich zu Ihnen passt.</p>
+                <p>Wir möchten Menschen dabei unterstützen, selbstbestimmt im vertrauten Zuhause zu leben – mit Respekt vor ihrer Geschichte, ihren Gewohnheiten und ihren Wünschen.</p>
             </div>
-            <div class="panel-box">
-              <span class="stat">1:1</span>
-              <p>persönliche Begleitung</p>
+        </section>
+
+        <!-- Leistungen -->
+        <section class="services container" id="services">
+            <div class="services-header">
+                <span class="label">Leistungen</span>
+                <h2>So viel Hilfe, wie Sie brauchen.</h2>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="ueber-uns" class="section">
-        <div class="container section-grid">
-          <div>
-            <p class="section-label">Über uns</p>
-            <h2>Menschenorientierte Versorgung, die wirkt.</h2>
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            </p>
-            <p>
-              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-              sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="leistungen" class="section section-alt">
-        <div class="container">
-          <p class="section-label">Leistungen</p>
-          <h2>Individuelle Unterstützung im Alltag.</h2>
-
-          <div class="service-grid">
-            <article class="service-card">
-              <span class="service-number">01</span>
-              <h3>Grundpflege</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-              </p>
-            </article>
-
-            <article class="service-card">
-              <span class="service-number">02</span>
-              <h3>Hauswirtschaft</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-              </p>
-            </article>
-
-            <article class="service-card">
-              <span class="service-number">03</span>
-              <h3>Mobilität &amp; Begleitung</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-              </p>
-            </article>
-
-            <article class="service-card">
-              <span class="service-number">04</span>
-              <h3>Nachsorge &amp; Beratung</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="kontakt" class="section">
-        <div class="container contact-grid">
-          <div>
-            <p class="section-label">Kontakt</p>
-            <h2>Persönliche Beratung ohne Hektik.</h2>
-            <p class="contact-intro">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-              voluptua.
-            </p>
-          </div>
-
-          <div class="contact-panel" aria-label="Kontaktinformationen">
-            <div class="contact-item">
-              <span class="contact-label">Adresse</span>
-              <p>Pflegedienst Muster GmbH<br />Musterstraße 12<br />12345 Musterstadt</p>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Körperbezogene Pflege</h3>
+                    <p>Unterstützung beim Waschen, Ankleiden, Essen und bei der Bewegung – achtsam und in Ihrem Tempo.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Behandlungspflege</h3>
+                    <p>Hilfe bei Medikamenten, Verbänden und weiteren ärztlich verordneten Maßnahmen.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Leistung 3</h3>
+                    <p>Beschreibung</p>
+                </div>
+                <div class="service-item">
+                    <h3>Leistung 4</h3>
+                    <p>Beschreibung</p>
+                </div>
             </div>
-            <div class="contact-item">
-              <span class="contact-label">Telefon</span>
-              <p><a href="tel:+490123456789">0123 456789</a></p>
+        </section>
+
+        <!-- Kontakt -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-container">
+                <div class="contact-text">
+                    <span class="label">Kontakt</span>
+                    <h2>Der erste Schritt?<br>Ein Gespräch.</h2>
+                    <p>Sie suchen Unterstützung für sich oder einen Angehörigen? Wir besprechen Ihren Bedarf und klären gemeinsam die nächsten Schritte.</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div class="contact-info">
+                            <span class="small">Telefon</span>
+                            <span class="value">[Telefonnummer]</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div class="contact-info">
+                            <span class="small">E-Mail</span>
+                            <span class="value">[E-Mail-Adresse]</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-info">
+                            <span class="small">Anschrift</span>
+                            <span class="value">[Straße und Hausnummer]<br>[PLZ und Ort]</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="contact-item">
-              <span class="contact-label">E-Mail</span>
-              <p><a href="mailto:info@pflegedienst.de">info@pflegedienst.de</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© 2026 Pflegedienst</p>
-        <a href="#top">Nach oben</a>
-      </div>
+    <!-- Footer -->
+    <footer class="header-main container">
+        <div class="footer-logo">
+            <h1>Meine Pflege</h1>
+            <span class="subtitle">Ambulanter Pflegedienst in [Platzhalter]</span>
+            <div class="website-hint">Website-Entwurf</div>
+        </div>
+        <div class="footer-links">
+            <a href="impressum.html">Impressum</a>
+        </div>
     </footer>
-  </body>
+
+</body>
 </html>
