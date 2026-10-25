@@ -15,11 +15,22 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
         body {
             font-family: var(--font-family);
             color: var(--primary-text);
             line-height: 1.6;
             background-color: #ffffff;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
         }
 
         a {
@@ -83,6 +94,9 @@
 
         /* Top Bar / Kontakt Info Leiste */
         .top-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
             background-color: var(--bg-light-pink);
             padding: 12px 0;
             font-size: 0.85rem;
@@ -92,6 +106,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+        }
+
+        .top-bar-message {
+            color: var(--secondary-text);
         }
 
         .top-bar-contact {
@@ -106,7 +124,7 @@
             display: flex;
             gap: 60px;
             align-items: center;
-            padding: 100px 40px;
+            padding: 50px 40px;
         }
 
         .hero-content {
@@ -156,7 +174,7 @@
         .about {
             display: flex;
             gap: 60px;
-            padding: 100px 40px;
+            padding: 50px 40px;
         }
 
         .about-title {
@@ -176,7 +194,7 @@
 
         /* Leistungen Section */
         .services {
-            padding: 100px 40px;
+            padding: 50px 40px;
         }
 
         .services-header {
